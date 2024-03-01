@@ -223,18 +223,6 @@ class HillCipher {
         public static void main(String[] args)
         {
             HillCipher x = new HillCipher();
-            //Scanner sc = new Scanner(System.in);
-            //System.out.println("Enter a keyword:");
-            //int m = sc.nextInt();
-            //String keyword = sc.next();
-            //x.setMatrix(keyword,m);
-            //x.KeyGen();
-            //System.out.println("Enter word to encrypt:");
-            //x.KeyGen("GYBNQKURP");
-            //String key_input = sc.next();
-            //x.encrypt("lol","GYBNQKURP");
-            //x.InverseDet(9);
-            //x.decryption("asdfghjkl");
             int[][] a = {
                     {17, 17 , 5} ,{21 , 18 , 21} ,{2 , 2 ,19}
             };
@@ -242,10 +230,6 @@ class HillCipher {
                     {9,8,7},{6,5,4},{3,2,1}
             };
             int det = (a[0][0]*(a[1][1]*a[2][2] - a[1][2]*a[2][1]) - a[0][1]*(a[1][0]*a[2][2]-a[1][2]*a[2][0]) + a[0][2]*(a[1][0]*a[2][1]-a[1][1]*a[2][0]) );
-            //x.InverseMatrix(a);
-            //x.decryption(a,"asdfghjkl");
-            //x.multiplyMatrices(a,b);
-            //x.padding("alaa");
             x.KeyGen("1 2 3 4 5 6 7 8 9");
             String key = "17 17 5 21 18 21 2 2 19";
             String[] tokens = key.split(" ");
