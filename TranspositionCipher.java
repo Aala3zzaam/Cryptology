@@ -119,12 +119,8 @@ class Transposition {
         public static void main(String[] args) {
 
             Transposition cipher = new Transposition();
-            int[] Key = {4 ,3 ,1 ,2 ,5 ,6 ,7};
-            System.out.println(cipher.index(Key,7));
             System.out.println(cipher.encryption("4 3 1 2 5 6 7","attackpostponeduntiltwoam",2));
-            //System.out.println(cipher.encryption("4 3 1 2 5 6 7","ttnaaptmtsuoaodwcoixknlxpetx"));
             System.out.println(cipher.decryption("4 3 1 2 5 6 7","nscxauopttwltmdnaoiepaxttokx",2));
-            //System.out.println(cipher.decryption("4 3 1 2 5 6 7","ttnaaptmtsuoaodwcoixknlxpetx"));
         }
 
 }
